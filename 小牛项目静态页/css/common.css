@@ -1,0 +1,36 @@
+/* 公共 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	max-width: 750px;
+	min-width: 320px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	font-size: 0.16rem;
+	height: 100%;
+}
+
+/* 通用滑屏容器 */
+.container {
+	width: 100%;
+	height: 100%;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: absolute;
+	z-index: 0;
+}
+
+.container::-webkit-scrollbar {
+	display: none;
+}
+
+#app {
+	height: 100%
+}

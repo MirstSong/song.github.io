@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>商品页</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				font-size: 0.16rem;
+			}
+			
+			header {
+				height: 0.46rem;
+				display: flex;
+				justify-content: space-between;
+				background: #eee;
+				align-items: center;
+			}
+			.logo {
+				width: 1.5rem;
+				display: flex;
+				align-items: center;
+				height: 0.32rem;
+				margin-left: 0.1rem;
+			}
+			.logo img {
+				width: auto;
+				height: 80%;
+			}
+			.icon {
+				display: flex;
+				height: 0.36rem;
+				align-items: center;
+			}
+			.icon img {
+				height: 80%;
+				width: auto;
+				margin-right: 0.1rem;
+			}
+			.icon img:nth-child(1) {
+				margin-right: 0.18rem;
+			}
+			.banner img {
+				width: 100%;
+				height: auto;
+				vertical-align: top;
+				
+			}
+			nav {
+				display: flex;
+				background: #eee;
+				padding: 0.1rem 0;
+			}
+			nav > div {
+				flex: 1;
+				text-align: center;
+				font-size: 0.14rem;
+				color: #333;
+			}
+			.nav_item > div {
+				width: 100%;
+				height: auto;
+			}
+			.nav_item > div img {
+				width: 36%;
+				height: auto;
+			}
+			main h2 {
+				color: #f30;
+				font-size: 0.16rem;
+				line-height: 0.5rem;
+				margin-left: 0.1rem;
+			}
+			.content img {
+				width: 100%;
+				height: auto;
+			}
+			footer {
+				display: flex;
+				position: fixed;
+				background: #eee;
+				padding: 0.03rem 0;
+				background: #000;
+				width: 100%;
+				bottom: 0;
+				left: 0;
+			}
+			footer > div {
+				flex: 1;
+				text-align: center;
+				font-size: 0.14rem;
+				color: #333;
+			}
+			.footer_item > div {
+				width: 100%;
+				height: auto;
+			}
+			.footer_item > div img {
+				width: 30%;
+				height: auto;
+			}
+			.footer_item > p {
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="img/11.png" >
+			</div>
+			<div class="icon">
+				<img src="img/star.png" >
+				<img src="img/user.png" >
+			</div>
+		</header>
+		<div class="banner">
+			<img src="img/n1s.jpg" >
+		</div>
+		<nav>
+			<div class="nav_item">
+				<div><img src="img/main_03.png" ></div>
+				<p>整车热卖</p>
+			</div>
+			<div class="nav_item">
+				<div><img src="img/main_05.png" ></div>
+				<p>热卖配件</p>
+			</div>
+			<div class="nav_item">
+				<div><img src="img/main_07.png" ></div>
+				<p>线下门店</p>
+			</div>
+			<div class="nav_item">
+				<div><img src="img/main_09.png" ></div>
+				<p>文化周边</p>
+			</div>
+		</nav>
+		<main>
+			<h2>
+				整车热卖
+			</h2>
+			<div class="content">
+				<img src="img/n1s01.jpg" >
+				<img src="img/n1s02.jpg" >
+				<img src="img/n1s03.jpg" >
+			</div>
+		</main>
+		<footer>
+			<div class="footer_item">
+				<div><img src="img/shop.png" ></div>
+				<p>商城</p>
+			</div>
+			<div class="footer_item">
+				<div><img src="img/server.png" ></div>
+				<p>服务</p>
+			</div>
+			<div class="footer_item">
+				<div><img src="img/order.png" ></div>
+				<p>订单</p>
+			</div>
+			<div class="footer_item">
+				<div><img src="img/my.png" ></div>
+				<p>我的</p>
+			</div>
+		</footer>
+	
+	
+	</body>
+	<script type="text/javascript">
+		(function() {
+			let html = document.documentElement;
+			let w = html.clientWidth;
+			html.style.fontSize = w / 375 * 100 + "px"
+			window.onresize = () => {
+				arguments.callee()
+			}
+		})()
+	</script>
+</html>

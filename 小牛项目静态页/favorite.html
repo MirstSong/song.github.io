@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>收藏夹</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				font-size: 0.16rem;
+			}
+			footer {
+				display: flex;
+				position: fixed;
+				background: #eee;
+				padding: 0.03rem 0;
+				background: #000;
+				width: 100%;
+				bottom: 0;
+				left: 0;
+			}
+			footer > div {
+				flex: 1;
+				text-align: center;
+				font-size: 0.14rem;
+				color: #333;
+			}
+			.footer_item > div {
+				width: 100%;
+				height: auto;
+			}
+			.footer_item > div img {
+				width: 30%;
+				height: auto;
+			}
+			.footer_item > p {
+				color: #fff;
+			}
+			
+			header {
+				height: 0.46rem;
+				display: flex;
+				justify-content: space-between;
+				background: #FF3300;
+				align-items: center;
+			}
+			header div {
+				width: 10%;
+				height: 0.3rem;
+				align-items: center;
+				margin-left: 0.1rem;
+			}
+			header div img {
+				width: 30%;
+				height: auto;
+				vertical-align:middle;
+			}
+			header h3 {
+				width: 20%;
+				margin-right: 1.3rem;
+				color: #fff;
+				font-weight: 400;
+			}
+			main .list {
+				display: flex;
+				margin-top: 0.15rem;
+				border-bottom: 1px solid #eee;
+			}
+			main .list .img {
+				display: flex;
+				width: 40%;
+				justify-content: center;
+			}
+			main .list .img img {
+				width: 80%;
+				height: auto;
+			}
+			main .list .details {
+				
+			}
+			main .list .details h4 {
+				font-size: 0.16rem;
+				font-weight: 400;
+				margin: 0.1rem 0;
+			}
+			main .list .details p {
+				
+			}
+			main .list .details button {
+				flex-direction: column;
+				border: none;
+				background: none;
+				margin-top: 0.4rem;
+				margin-left: 1.65rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div>
+				<img src="img/back.png" >
+			</div>
+			<h3>收藏夹</h3>
+		</header>
+		<main>
+			<div class="list">
+				<div class="img">
+					<img src="img/n1s01.jpg" >
+				</div>
+				<div class="details">
+					<h4>M1青春版</h4>
+					<p>价格：5699.00</p>
+					<button type="button">删除</button>
+				</div>
+			</div>
+			<div class="list">
+				<div class="img">
+					<img src="img/n1s02.jpg" >
+				</div>
+				<div class="details">
+					<h4>M1都市版</h4>
+					<p>价格：6199.00</p>
+					<button type="button">删除</button>
+				</div>
+			</div>
+			<div class="list">
+				<div class="img">
+					<img src="img/n1s04.jpg" >
+				</div>
+				<div class="details">
+					<h4>M1顶配版</h4>
+					<p>价格：9999.00</p>
+					<button type="button">删除</button>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer_item">
+				<div><img src="img/shop.png" ></div>
+				<p>商城</p>
+			</div>
+			<div class="footer_item">
+				<div><img src="img/server.png" ></div>
+				<p>服务</p>
+			</div>
+			<div class="footer_item">
+				<div><img src="img/order.png" ></div>
+				<p>订单</p>
+			</div>
+			<div class="footer_item">
+				<div><img src="img/my.png" ></div>
+				<p>我的</p>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		(function() {
+			let html = document.documentElement;
+			let w = html.clientWidth;
+			html.style.fontSize = w / 375 * 100 + "px"
+			window.onresize = () => {
+				arguments.callee()
+			}
+		})()
+	</script>
+</html>
